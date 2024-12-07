@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesaj Personalizat</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            /* Fundal personalizat - înlocuiește URL-ul cu link-ul tău */
+            background-image: url('https://media.discordapp.net/attachments/1314778254305132575/1314794733054460015/media-160403415313601900.png?ex=67551184&is=6753c004&hm=0cef3f17352b53a5cb8fd21a245598d6417bf94f4b243d8b33e20e8c63cc0cdf&=&format=webp&quality=lossless'); /* Înlocuiește cu URL-ul imaginii tale */
+            background-size: cover; /* Imaginea va acoperi întregul fundal */
+            background-position: center center; /* Imaginea va fi centrată */
+            background-attachment: fixed; /* Imaginea rămâne fixă când derulezi */
+            text-align: center;
+            padding: 50px;
+            color: white; /* Culoarea textului */
+        }
+        h1 {
+            font-size: 40px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Umbra textului pentru mai mult contrast */
+        }
+        .message-box {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7); /* Fundal semitransparent pentru mesaj */
+            border-radius: 10px;
+            display: inline-block;
+            min-width: 300px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Pagina Ta Personalizată</h1>
+
+    <!-- Mesajul va apărea aici -->
+    <div id="messageBox" class="message-box">
+        Bun venit pe site-ul meu personalizat! 🎉
+    </div>
+
+    <script>
+        // Poți schimba mesajul aici
+        var customMessage = "tiai luat muie de la guraru🌟";
+        
+        // Afișăm mesajul automat când se încarcă pagina
+        document.getElementById("messageBox").innerHTML = customMessage;
+    </script>
+
+</body>
+</html>
